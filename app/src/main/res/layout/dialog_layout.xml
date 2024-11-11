@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ANDROID APP"
+        android:gravity="center"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="40dp"></TextView>
+    <!--android:background="#fcc" 会覆盖掉style中原本设置的background属性值-->
+    <EditText
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="USERNAME" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:hint="PASSWORD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_black_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/bt_black_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN"
+            android:textColor="#000"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
